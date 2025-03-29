@@ -1,59 +1,48 @@
-# Next.js Dashboard Website
+# AI Data Query Dashboard
 
-## Live Link
-https://leads-dashboard-web.vercel.app/
-
-## Overview
-This is a dashboard website built using **Next.js** that displays posts from the **JSONPlaceholder API** in a tabular format. The project demonstrates server-side rendering (SSR), filtering functionality, authentication with a dummy sign-in method, UI implementation with **ShadCN**, dark mode support, and full mobile responsiveness.
+A modern, responsive web application that provides real-time business insights through an dummy AI-powered query system. Built with Next.js and Redux, featuring beautiful data visualizations and a user-friendly interface.
 
 ## Features
-- **Server-Side Rendering (SSR)**: Posts are fetched and rendered on the server on initial load.
-- **Filtering**: Users can filter posts by **User ID** and **Title**.
-- **Dark Mode**: Implemented using **Context API**.
-- **ShadCN UI**: Used for designing a sleek and modern UI.
-- **Loader Implementation**: Managed via **Context API**.
-- **Authentication**: Dummy sign-in method using **UUID** to generate a fake token.
-- **Static Pages**: Includes a **Profile Page** and a **Settings Page**.
-- **Fully Responsive**: Optimized for **mobile devices**.
+
+- **AI-Powered Search**: Query business insights like revenue, sales, and user engagement
+- **Real-time Data Visualization**: Interactive charts using Chart.js
+- **Dynamic Data Tables**: Structured display of query results
+- **Search History**: Quick access to previous queries
+- **Dark Mode Support**: Seamless theme switching
+- **Responsive Design**: Works perfectly on all devices
+- **Redux State Management**: Efficient data handling and caching
 
 ## Tech Stack
-- **Next.js** (Framework)
-- **ShadCN** (UI Components)
-- **Context API** (State Management for Dark Mode & Loader)
-- **UUID** (Dummy Authentication)
-- **Tailwind CSS** (Styling)
 
-## Installation
+- **Frontend Framework**: Next.js 14
+- **State Management**: Redux Toolkit
+- **Data Visualization**: Chart.js
+- **Styling**: Tailwind CSS
 
-### Setup Environment Variables
-Create a `.env` file in the root directory and add the following:
-```
-NEXT_PUBLIC_API_URL=https://jsonplaceholder.typicode.com/
-```
+## Features in Detail
 
-### Steps to Run the Project
-```bash
+### Search Functionality
+- Enter queries like "revenue", "users", or "sales"
+- View real-time results with charts and tables
+- Access search history for quick reference
+- AI-powered response generation
 
-# Install dependencies
-npm install  # or yarn install
+### Data Visualization
+- Interactive line charts
+- Responsive design
+- Dark mode support
+- Customizable chart options
 
-# Run the development server
-npm run dev  # or yarn dev
-```
-The application will be available at: `http://localhost:3000`
+### Data Tables
+- Sortable columns
+- Responsive layout
+- Dark mode compatible
+- Hover effects for better UX
 
-## API Usage
-The project uses the **JSONPlaceholder API** for fetching posts.
-- **Endpoint:** `https://jsonplaceholder.typicode.com/posts`
-- **Filters:** Users can filter posts by `userId` and `title`.
+## State Management
 
-## Authentication (Dummy)
-- The **Sign-In Page** accepts a username and generates a dummy token using `UUID`.
-- The token is stored in **localStorage** for session management.
-- No real authentication is implemented.
-
-## Dark Mode
-- Implemented using **Context API**.
-- Saves user preference in **localStorage**.
-- Uses **ShadCN themes** for switching between light and dark mode.
-
+The application uses Redux Toolkit for state management:
+- Centralized store
+- API integration with RTK Query
+- Efficient caching
+- Optimistic updates
